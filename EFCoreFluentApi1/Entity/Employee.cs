@@ -8,7 +8,7 @@ namespace EFCoreFluentApi1
     {
         public int EmployeeId { get; set; }
 
-        //public ICollection<Audit> Audits { get; set; } //You cannot add this
+        //public ICollection<Audit> Audits { get; set; } //You cannot add this to get All Audits.
     }
 
 }
