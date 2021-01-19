@@ -28,7 +28,7 @@ namespace EFCoreFluentApi1.Context
             builder.Entity<Employee>().Property(e => e.EmployeeId);
 
             builder.Entity<Audit>().HasKey(e => e.AuditId);
-            builder.Entity<Audit>().Property(e => e.AuditId);
+            builder.Entity<Audit>().Property(e => e.AuditId).IsRequired();//Compatible IsRequired
             builder.Entity<Audit>().HasOne(e => e.ModEmployee).WithMany().HasForeignKey(e => e.EmployeeId);
 
             builder.Entity<Employee>().HasData(new Employee[]
