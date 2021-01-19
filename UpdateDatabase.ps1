@@ -1,0 +1,1 @@
+dotnet-ef database update --startup-project "EFCoreFluentApi1" --project "EFCoreFluentApi1" --context "MyContext" --verbose
